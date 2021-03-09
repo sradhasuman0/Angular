@@ -1,9 +1,6 @@
 properties([pipelineTriggers([githubPush()])])
 pipeline{
     agent any
-    tools{
-        //jdk 'JDK'
-    }
     stages {
     stage('Install') {
       steps { sh 'npm install' }
